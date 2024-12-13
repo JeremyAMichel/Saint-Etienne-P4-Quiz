@@ -16,20 +16,20 @@ include_once '../utils/check-if-not-connected.php';
 
 <body>
 
-<div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-pink-600">
-    <div class="bg-white p-12 rounded-lg shadow-lg w-full max-w-3xl transform transition duration-500 hover:scale-105 relative">
-        <div class="bg-gray-200 p-4 rounded-t-lg flex justify-between items-center">
-            <h2 class="text-2xl font-bold text-gray-800">Bienvenue <?php echo htmlspecialchars($_SESSION['user']['pseudo']); ?></h2>
-            <form action="../process/logout.php" method="POST">
-                <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline transition duration-300">Se déconnecter</button>
-            </form>
-        </div>
-        <div class="p-6">
-            <h3 class="text-2xl font-bold mb-4 text-center text-gray-800">Liste des catégories</h3>
-            <!-- Add your categories list here -->
+    <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+        <div class="bg-white p-12 rounded-lg shadow-lg w-full max-w-3xl transform transition duration-500 hover:scale-105 relative">
+            <div class="bg-gray-200 p-4 rounded-t-lg flex justify-between items-center">
+                <h2 class="text-2xl font-bold text-gray-800">Bienvenue <?php echo htmlspecialchars($_SESSION['user']['pseudo']); ?></h2>
+                <form action="../process/logout.php" method="POST">
+                    <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline transition duration-300">Se déconnecter</button>
+                </form>
+            </div>
+            <div class="p-6">
+                <h3 class="text-2xl font-bold mb-4 text-center text-gray-800">Liste des catégories</h3>
+                <!-- Add your categories list here -->
+            </div>
         </div>
     </div>
-</div>
 
 
 </body>
