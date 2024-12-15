@@ -60,6 +60,21 @@ if ($answers[$givenAnswer]['is_correct']) {
 } 
 
 if ($currentQuestion === $nbQuestions) {
+    $_SESSION['game']['isOver'] = true;
+
+    // faire le code pour sauvegarder le score
+    try {
+        include_once '../utils/connect-db.php';
+        $stmt = $pdo->prepare('INSERT INTO score (result, id_quiz, id_user) VALUES (:result, :id_quiz, :id_user)');
+        $stmt->execute([
+            'result' => $_SESSION['game']['score'],
+            'id_quiz' => $_SESSION['game']['quiz']['id'],
+            'id_user' => $_SESSION['user']['id']
+        ]);
+    } catch (PDOException $error) {
+        throw $error;
+    }
+
     header('location: ../public/result.php');
     return;
 } else {

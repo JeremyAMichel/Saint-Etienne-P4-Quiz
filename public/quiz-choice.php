@@ -39,19 +39,19 @@ if (isset($_GET['category'])) {
 
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
         <main class="bg-white p-12 rounded-lg shadow-lg w-full max-w-3xl relative">
-            <div class="bg-gray-200 p-4 rounded-t-lg flex justify-between items-center">
-                <h2 class="text-2xl font-bold text-gray-800">Bienvenue <?php echo htmlspecialchars($_SESSION['user']['pseudo']); ?></h2>
+            <div class="bg-gray-200 p-4 rounded-t-lg flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 ">Bienvenue <?php echo htmlspecialchars($_SESSION['user']['pseudo']); ?></h2>
                 <form action="../process/logout.php" method="POST">
                     <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline transition duration-300">Se déconnecter</button>
                 </form>
             </div>
-            <div class="p-6">
+            <div class="p-6 ">
 
                 <?php
                 if (isset($_GET['category'])) {
 
                 ?>
-                    <div class="flex justify-between items-center mb-8">
+                    <div class="flex justify-between items-center mb-12">
                         <h3 class="text-2xl font-bold text-gray-800">
                             Liste des quiz de la catégorie <?php
                                                             if (isset($quizzes[0]['category_name'])) {
@@ -68,8 +68,10 @@ if (isset($_GET['category'])) {
                 } else {
                 ?>
 
-                    <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">Liste des catégories</h3>
-
+                    <div class="flex justify-between items-center mb-12">
+                        <h3 class="text-2xl font-bold text-gray-800">Liste des catégories</h3>
+                        <a href="score.php" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline transition duration-300 float-right">Voir les scores</a>
+                    </div>
 
                 <?php
                 }
