@@ -14,7 +14,16 @@ INSERT INTO `Quiz` (`name`, `id_category`, `id_image`) VALUES
 ('History Quiz 1', 3, 5),
 ('History Quiz 2', 3, 6),
 ('Geography Quiz 1', 4, 7),
-('Geography Quiz 2', 4, 8);
+('Geography Quiz 2', 4, 7);
+
+INSERT INTO `Image` (`img_path`, `img_alt`) VALUES
+('/assets/images/quiz-science-1.png', 'Science 1'),
+('/assets/images/quiz-science-2.webp', 'Science 2'),
+('/assets/images/quiz-math-1.png', 'Math 1'),
+('/assets/images/quiz-math-2.png', 'Math 2'),
+('/assets/images/quiz-history-1.png', 'History 1'),
+('/assets/images/quiz-history-2.png', 'History 2'),
+('/assets/images/quiz-geography-1.png', 'Geography 1'),
 
 -- Insertion des questions et réponses
 -- Science Quiz 1
@@ -218,11 +227,4 @@ INSERT INTO `Answer` (`title`, `id_question`, `is_correct`) VALUES
 ('Brasilia', 79, TRUE), ('Rio de Janeiro', 79, FALSE), ('Sao Paulo', 79, FALSE), ('Salvador', 79, FALSE),
 ('Sicily', 80, TRUE), ('Sardinia', 80, FALSE), ('Cyprus', 80, FALSE), ('Crete', 80, FALSE);
 
-INSERT INTO `Image` (`img_path`, `img_alt`) VALUES
-('http://localhost:8000/assets/images/quiz-science-1.png', 'Science 1'),
-('http://localhost:8000/assets/images/quiz-science-2.webp', 'Science 2'),
-('http://localhost:8000/assets/images/quiz-math-1.png', 'Math 1'),
-('http://localhost:8000/assets/images/quiz-math-2.png', 'Math 2'),
-('http://localhost:8000/assets/images/quiz-history-1.png', 'History 1'),
-('http://localhost:8000/assets/images/quiz-history-2.png', 'History 2'),
-('http://localhost:8000/assets/images/quiz-geography-1.png', 'Geography 1'),
+

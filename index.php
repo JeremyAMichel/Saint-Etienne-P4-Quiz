@@ -17,7 +17,7 @@ include_once './utils/check-if-connected.php';
 
 <body>
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm transform ">
+        <main class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm transform ">
             <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Connexion</h2>
             <form action="./process/connexion.php" method="POST">
                 <div class="mb-4">
@@ -28,7 +28,7 @@ include_once './utils/check-if-connected.php';
                     <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">Se connecter</button>
                 </div>
             </form>
-        </div>
+        </main>
     </div>
 
 </body>
