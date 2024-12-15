@@ -12,12 +12,12 @@ include_once './utils/check-if-connected.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm transform transition duration-500 hover:scale-105">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm transform ">
             <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Connexion</h2>
             <form action="./process/connexion.php" method="POST">
                 <div class="mb-4">
