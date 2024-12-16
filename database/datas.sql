@@ -17,13 +17,13 @@ INSERT INTO `Quiz` (`name`, `id_category`, `id_image`) VALUES
 ('Geography Quiz 2', 4, 7);
 
 INSERT INTO `Image` (`img_path`, `img_alt`) VALUES
-('/assets/images/quiz-science-1.png', 'Science 1'),
-('/assets/images/quiz-science-2.webp', 'Science 2'),
-('/assets/images/quiz-math-1.png', 'Math 1'),
-('/assets/images/quiz-math-2.png', 'Math 2'),
-('/assets/images/quiz-history-1.png', 'History 1'),
-('/assets/images/quiz-history-2.png', 'History 2'),
-('/assets/images/quiz-geography-1.png', 'Geography 1'),
+('../assets/images/quiz-science-1.png', 'Science 1'),
+('../assets/images/quiz-science-2.webp', 'Science 2'),
+('../assets/images/quiz-math-1.png', 'Math 1'),
+('../assets/images/quiz-math-2.png', 'Math 2'),
+('../assets/images/quiz-history-1.png', 'History 1'),
+('../assets/images/quiz-history-2.png', 'History 2'),
+('../assets/images/quiz-geography-1.png', 'Geography 1');
 
 -- Insertion des questions et réponses
 -- Science Quiz 1

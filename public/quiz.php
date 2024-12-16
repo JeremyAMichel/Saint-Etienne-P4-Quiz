@@ -123,7 +123,7 @@ if (
             if (selectedAnswer) {
                 const form = document.createElement('form');
                 form.method = 'POST';
-                form.action = '/process/answer.php';
+                form.action = '../process/answer.php';
 
                 const input = document.createElement('input');
                 input.type = 'hidden';
